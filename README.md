@@ -8,7 +8,7 @@ SAS template for internal use
 
 ## Customization of the repository
  
-The lollowing files can be used to customize your repository:
+The following files can be used to customize your repository:
 
    * `_1repo-assets-load.inc`
    * `_2USER-assets-load.inc`
