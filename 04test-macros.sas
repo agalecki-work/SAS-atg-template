@@ -1,14 +1,17 @@
 /**********************************************/
 /*                                            */
 /*  Test macros stored in ./macros folder     */
-/*  datatest.BMT is needed                    /
+/*                                            */
 /*                                            */
 /**********************************************/
-
 /*===== SAS SETUP starts */
 
-/*----  Loading macro definitions and other assets stored in repository---- */
-filename sassetup "./__123setup.inc";
+/* Auto executed. Note the location of the file*/
+filename setupc   "C:/Users/Public/__sas_session_info.sas";
+%include setupc;
+
+
+filename sassetup "&repo_path.__123setup.inc";
 %include sassetup;
 
 /*===== SAS SETUP ends ====== */
