@@ -6,6 +6,9 @@
 /***********************************************************/
 
 /*===== SAS SETUP starts */
+/* Auto executed. Note the location of the file*/
+filename setupc   "C:/Users/Public/__sas_session_info.sas";
+%include setupc;
 
 filename sassetup "./__123setup.inc";
 %include sassetup;
@@ -39,3 +42,4 @@ run;
 
 %copy_work_datasets(datatest, classx bmt);
 %library_datainfo(datatest); /* Info on datasets in `datatest` library */
+ods html close;
