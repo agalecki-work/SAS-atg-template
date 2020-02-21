@@ -1,7 +1,7 @@
 proc fcmp outlib=sasuser.ufuncs.utils;
 
  function BMI(height, weight);
-/*@ BSA(height,weight)  Calculates BMI. Height in m, weight in kg */
+/*@ BMI(height,weight)  Calculates BMI. Height in m, weight in kg */
 /* height: height in meters */
 /* weight: weight in kg */
  return((weight)/(height*height));
